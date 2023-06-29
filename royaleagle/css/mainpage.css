@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(hotel.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #ddd566;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.navbar{
+    width: 95%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-text-stroke: 1px #000000;
+}
+
+.logo{
+    width: 200px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration:navajowhite;
+    color: rgb(169, 125, 38);
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #f40000;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after{
+    width: 100%;
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+}
+
+.home .content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.home .content h2{
+    text-transform: uppercase;
+    color: white;
+    font-size: 5vw;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    position: relative;
+    animation: text 5s ease-in-out infinite;
+    -webkit-text-stroke: 5px #464545;
+}
+
+@keyframes text {
+    30%{
+      letter-spacing: 15px;
+    }
+
+  }
+
+.home .content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.home .video-container video{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: auto;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #b0db12;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #ff0000;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+
+.gallery{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+}
+
+.gallery .head{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.gallery .head h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.attraction{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+}
+
+.attraction .head{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.attraction .head h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.service{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+}
+
+.service .head{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.service .head h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.review{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+}
+
+.review .head{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.review .head h1{
+    font-size: 70px;
+    margin-top: 80px;
+}

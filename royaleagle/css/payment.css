@@ -1,0 +1,51 @@
+
+
+.book-detail {
+    border: black 1px solid;
+    width: 27%;
+    margin: auto;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+.book-detail h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.book-detail .detail {
+    width: 70%;
+    margin: auto;
+}
+
+.payment {
+    border: black 1px solid;
+    width: 360px;
+    margin: auto;
+    margin-top: 33px;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.payment h2 {
+    text-align: center;
+}
+
+.payment .form {
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.payment .form input {
+    margin-bottom: 10px;
+}
+
+.payment .submit-btn{
+    width: fit-content;
+    margin-left: 320px;
+}
+
